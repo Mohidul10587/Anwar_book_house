@@ -68,7 +68,7 @@ const Orders = ({ orders }) => {
 
 export async function getServerSideProps() {
   try {
-    const response = await fetch("http://test.notebookprokash.com/order");
+    const response = await fetch("https://test.notebookprokash.com/order");
     if (response.ok) {
       const data = await response.json();
       const formattedOrders = data.map((order) => ({

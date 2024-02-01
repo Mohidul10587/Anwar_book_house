@@ -77,7 +77,7 @@ const Signup = () => {
       formData.append("publicationsLogo", sellerData.publicationsLogo);
 
       const response = await fetch(
-        `http://test.notebookprokash.com/seller/create`,
+        `https://test.notebookprokash.com/seller/create`,
         {
           method: "POST",
           credentials: "include",

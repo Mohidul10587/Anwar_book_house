@@ -22,7 +22,7 @@ const UserManagement = () => {
     const fetchUsers = async () => {
       try {
         const response = await fetch(
-          "http://test.notebookprokash.com/seller/all"
+          "https://test.notebookprokash.com/seller/all"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch sellers");
@@ -42,7 +42,7 @@ const UserManagement = () => {
     try {
       // Send a request to delete the seller
       const response = await fetch(
-        `http://test.notebookprokash.com/seller/${sellerId}`,
+        `https://test.notebookprokash.com/seller/${sellerId}`,
         {
           method: "DELETE",
           headers: {

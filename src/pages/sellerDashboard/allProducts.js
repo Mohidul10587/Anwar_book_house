@@ -35,7 +35,7 @@ const AllProducts = ({ seller, searchQuery }) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://test.notebookprokash.com/products?${queryParams}`
+          `https://test.notebookprokash.com/products?${queryParams}`
         );
         const data = await response.json();
         console.log(data);
@@ -59,7 +59,7 @@ const AllProducts = ({ seller, searchQuery }) => {
   const deleteProduct = async (productId) => {
     try {
       const res = await fetch(
-        `http://test.notebookprokash.com/products/${productId}`,
+        `https://test.notebookprokash.com/products/${productId}`,
         {
           method: "DELETE",
         }
@@ -139,7 +139,7 @@ const AllProducts = ({ seller, searchQuery }) => {
         >
           <div className="w-12 h-12">
             <img
-              src={`http://test.notebookprokash.com/uploads/${p.image}`}
+              src={`https://test.notebookprokash.com/uploads/${p.image}`}
               className="w-full h-full  rounded-full"
               alt=""
             />

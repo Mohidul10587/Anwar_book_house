@@ -15,7 +15,7 @@ const ProductCard = ({ p }) => {
             style={{ paddingBottom: "100%" }}
           >
             <Image
-              src={`http://test.notebookprokash.com/uploads/${p.image}`}
+              src={`https://test.notebookprokash.com/uploads/${p.image}`}
               alt={p.name}
               fill
               objectFit="cover"

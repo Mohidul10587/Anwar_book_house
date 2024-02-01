@@ -54,7 +54,7 @@ const Cart = ({ cartProductQuantity, setCartProductQuantity }) => {
             <div key={item.id} className="border rounded p-4 mb-4 flex gap-4">
               <Image
                 className="border border-black h-44 w-44"
-                src={`http://test.notebookprokash.com/uploads/${item.image}`}
+                src={`https://test.notebookprokash.com/uploads/${item.image}`}
                 width={150}
                 height={150}
               />

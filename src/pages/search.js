@@ -44,7 +44,7 @@ const ProductsPage = ({ searchQuery, genre, setGenre }) => {
       });
 
       const response = await fetch(
-        `http://test.notebookprokash.com/products?${queryParams}`
+        `https://test.notebookprokash.com/products?${queryParams}`
       );
       const data = await response.json();
       console.log(data);

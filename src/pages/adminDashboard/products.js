@@ -17,7 +17,7 @@ const AllProducts = () => {
       publisher: "",
     });
 
-    fetch(`http://test.notebookprokash.com/products?${queryParams}`, {
+    fetch(`https://test.notebookprokash.com/products?${queryParams}`, {
       method: "GET",
       headers: {
         // Authorization: `Bearer ${token}`,
@@ -35,7 +35,7 @@ const AllProducts = () => {
   const deleteProduct = async (productId) => {
     try {
       const res = await fetch(
-        `http://test.notebookprokash.com/products/${productId}`,
+        `https://test.notebookprokash.com/products/${productId}`,
         {
           method: "DELETE",
         }
@@ -76,7 +76,7 @@ const AllProducts = () => {
         >
           <div className="w-12 h-12">
             <img
-              src={`http://test.notebookprokash.com/uploads/${p.image}`}
+              src={`https://test.notebookprokash.com/uploads/${p.image}`}
               className="w-full h-full  rounded-full"
               alt=""
             />

@@ -33,7 +33,7 @@ const Checkout = () => {
     };
     console.log(order);
     try {
-      const response = await fetch("http://test.notebookprokash.com/order", {
+      const response = await fetch("https://test.notebookprokash.com/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -58,7 +58,7 @@ const Checkout = () => {
 
         try {
           const response = await fetch(
-            "http://test.notebookprokash.com/payment/payment",
+            "https://test.notebookprokash.com/payment/payment",
             {
               method: "POST",
               headers: {

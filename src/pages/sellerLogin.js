@@ -30,7 +30,7 @@ const Login = () => {
     setIsLoading(true);
     try {
       const response = await fetch(
-        `http://test.notebookprokash.com/seller/login`,
+        `https://test.notebookprokash.com/seller/login`,
         {
           method: "POST",
           credentials: "include",

@@ -91,7 +91,7 @@ export async function getStaticProps() {
     });
 
     const productsResponse = await fetch(
-      `http://test.notebookprokash.com/products?${queryParams}`,
+      `https://test.notebookprokash.com/products?${queryParams}`,
       {
         method: "GET",
       }

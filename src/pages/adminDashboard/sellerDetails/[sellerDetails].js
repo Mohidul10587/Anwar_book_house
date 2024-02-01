@@ -17,7 +17,7 @@ const SellerDetails = ({ seller }) => {
           <div>
             <img
               className="md:w-[420px] w-full h-[320px] border border-gray-400 "
-              src={`http://test.notebookprokash.com/uploads/${seller.image}`}
+              src={`https://test.notebookprokash.com/uploads/${seller.image}`}
               alt=""
             />
           </div>
@@ -41,7 +41,7 @@ SellerDetails.getLayout = function getLayout(page) {
 };
 
 export async function getStaticPaths() {
-  const response = await fetch("http://test.notebookprokash.com/seller/all");
+  const response = await fetch("https://test.notebookprokash.com/seller/all");
   const data = await response.json();
   const paths = data.sellers.map((seller) => ({
     params: { sellerDetails: seller.id.toString() },
@@ -53,7 +53,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   try {
     const response = await fetch(
-      `http://test.notebookprokash.com/seller/getSingleSeller/${params.sellerDetails}`
+      `https://test.notebookprokash.com/seller/getSingleSeller/${params.sellerDetails}`
     );
     if (!response.ok) {
       throw new Error(`Failed to fetch data from the API (${response.status})`);

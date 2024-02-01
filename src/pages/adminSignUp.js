@@ -48,7 +48,7 @@ const Signup = () => {
       formData.append("image", sellerData.image);
 
       const response = await fetch(
-        `http://test.notebookprokash.com/admin/create`,
+        `https://test.notebookprokash.com/admin/create`,
         {
           method: "POST",
           credentials: "include",

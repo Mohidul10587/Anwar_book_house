@@ -44,7 +44,7 @@ const OrderPage = ({ order }) => {
               <li key={product.id} className="mb-4 p-4 border rounded-md">
                 <div className="mb-2">
                   <img
-                    src={`http://test.notebookprokash.com/uploads/${product.image}`}
+                    src={`https://test.notebookprokash.com/uploads/${product.image}`}
                     alt={product.name}
                     className="w-full h-40 object-cover rounded-md"
                   />
@@ -71,7 +71,7 @@ OrderPage.getLayout = function getLayout(page) {
 
 export async function getStaticPaths() {
   // Fetch the list of all order IDs
-  const response = await fetch("http://test.notebookprokash.com/order");
+  const response = await fetch("https://test.notebookprokash.com/order");
   const orderIds = await response.json();
 
   // Generate paths based on order IDs
@@ -88,7 +88,7 @@ export async function getStaticProps({ params }) {
   try {
     // Fetch the order data using orderId
     const response = await fetch(
-      `http://test.notebookprokash.com/order/singleOrder/${orderId}`
+      `https://test.notebookprokash.com/order/singleOrder/${orderId}`
     );
     const order = await response.json();
 

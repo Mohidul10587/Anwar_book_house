@@ -11,7 +11,7 @@ const SoldProducts = ({ seller }) => {
     const fetchSoldBooks = async () => {
       const sellerEmail = seller.email;
       const soldBooksResponse = await fetch(
-        `http://test.notebookprokash.com/soldBooks/${sellerEmail}`
+        `https://test.notebookprokash.com/soldBooks/${sellerEmail}`
       );
       const soldBooksData = await soldBooksResponse.json();
       setSoldBooks(soldBooksData);
@@ -36,7 +36,7 @@ const SoldProducts = ({ seller }) => {
           <div className="flex items-center">
             <Image
               className="border border-gray-300 rounded"
-              src={`http://test.notebookprokash.com/uploads/${
+              src={`https://test.notebookprokash.com/uploads/${
                 JSON.parse(book.product).image
               }`}
               width={150}

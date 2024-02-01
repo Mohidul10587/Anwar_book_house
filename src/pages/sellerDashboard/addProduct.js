@@ -66,10 +66,13 @@ const ProductUploadForm = ({ seller }) => {
     formData.append("offerByAdmin", 0);
 
     try {
-      const response = await fetch("http://test.notebookprokash.com/products", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://test.notebookprokash.com/products",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (response.ok) {
         const product = await response.json(); // await the JSON response

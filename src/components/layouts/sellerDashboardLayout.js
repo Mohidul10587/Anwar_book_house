@@ -13,7 +13,7 @@ const SellerDashboard = ({ children, searchQuery }) => {
     const fetchData = async () => {
       const token = localStorage.getItem("accessToken");
       const response = await fetch(
-        "http://test.notebookprokash.com/seller/checkSeller",
+        "https://test.notebookprokash.com/seller/checkSeller",
         {
           method: "GET",
           headers: {

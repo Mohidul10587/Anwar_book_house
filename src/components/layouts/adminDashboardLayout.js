@@ -20,7 +20,7 @@ const AdminDashboardLayout = ({ children }) => {
     const fetchData = async () => {
       const token = localStorage.getItem("accessToken");
       const response = await fetch(
-        "http://test.notebookprokash.com/admin/checkAdmin",
+        "https://test.notebookprokash.com/admin/checkAdmin",
         {
           method: "GET",
           headers: {
