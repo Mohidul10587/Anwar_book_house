@@ -55,7 +55,7 @@ const ProductUploadForm = ({ seller }) => {
     const formData = new FormData();
     formData.append("name", productData.name);
     formData.append("writer", productData.writer);
-    formData.append("publications", productData.publications);
+    formData.append("publishers", productData.publications);
     formData.append("genre", productData.genre);
     formData.append("description", productData.description);
     formData.append("price", productData.price);
